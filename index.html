@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Million</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Logo */
+        .logo {
+            width: 200px;
+            margin-top: 30px;
+        }
+
+        /* Button */
+        .subscribe-btn {
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Images */
+        .images {
+            margin-top: 20px;
+        }
+
+        .images img {
+            .images img {
+    width: 1px;
+    height: 1px;
+
+            object-fit: cover;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="Logo.jpeg" alt="Logo" class="logo">
+
+    <!-- Subscribe Section -->
+    <h2>To Upload your poster click here</h2>
+
+    <!-- Replace the link inside href -->
+    <a href="https://wa.me/201095365108">
+        <button class="subscribe-btn">Click Here</button>
+    </a>
+
+    <!-- 10 Images -->
+<div id="gallery"></div>
+
+<div id="gallery"></div>
+
+<script>
+const container = document.getElementById("gallery");
+for (let i = 1; i <= 1000000; i++) {
+  let img = document.createElement("img");
+  img.src = `image${i}.jpg`;      // اسم الصورة
+  img.loading = "lazy";              // تحميل كسول
+  img.width = 1;                   // العرض بالبكسل
+  img.height = 1;                  // الإرتفاع بالبكسل
+  container.appendChild(img);
+}
+</script>
+<footer style="background-color:black; color:white; text-align:center; padding:15px; position:fixed; bottom:0; width:100%;">
+    <p>&copy; 2026 Your Million. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
